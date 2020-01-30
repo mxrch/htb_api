@@ -29,14 +29,14 @@ Hope you'll do great things ! ❤
 ● POST /api/conversations/total/ + api_token
 
 ### Machines
-● GET /api/machines/get/matrix/+id+/ + api_token\
 ● GET /api/machines/get/all + api_token\
+● GET /api/machines/get/matrix/+id+/ + api_token\
+● GET /api/machines/get/owns + api_token\
 ● POST /api/machines/vpnping/57 + api_token + data = {"id" : machine_id}\
 ● POST /api/machines/rate/+id+/+rating + api_token\
 ● POST /api/machines/rate/matrix + data = { "machine_id": id, "real": real, "cve" : cve, "enum": enumeration }\
 ● POST /api/machines/own/root/+id+/ + api_token + data = { "hash" : hash, "diff" : diff }\
 ● POST /api/machines/own/user/+id+/ + api_token + data = { "hash" : hash, "diff" : diff }\
-● GET /api/machines/owns + api_token\
 ● GET /api/machines/difficulty + api_token\
 ● GET /api/machines/reviews + api_token\
 ● GET /api/machines/todo + api_token\
