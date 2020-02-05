@@ -30,6 +30,7 @@ Hope you'll do great things ! ❤
 
 ### Machines
 ● GET /api/machines/get/all + api_token\
+● GET /api/machines/get/+id + api_token\
 ● GET /api/machines/get/matrix/+id+/ + api_token\
 ● POST /api/machines/get/owns + api_token\
 ● POST /api/machines/vpnping/57 + api_token + data = {"id" : machine_id}\
