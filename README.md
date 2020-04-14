@@ -81,6 +81,7 @@ Hope you'll do great things ! ❤
 ● POST /api/careers/application/track/+offer_id + api_token
 
 ### Users
+● GET /api/users/identifier/+account_identifier
 ● POST /api/user/id + api_token + data = { "username" : name }\
 ● POST /api/users/find + api_token + data = { "name" : query }\
 ● POST /api/users/respect/+user_id + api_token\
