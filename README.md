@@ -67,7 +67,7 @@ Hope you'll do great things ! ❤
 ● POST /api/machines/reset/cancel + api_token + data = { ? }
 
 ### Starting Points
-● GET /api/startingpoint/writeup/1 + api_token\
+● GET /api/startingpoint/writeup/+id + api_token\
 ● GET /api/startingpoint/machines + api_token\
 ● GET /api/startingpoint/owns + api_token\
 ● GET /api/startingpoint/reset + api_token\
