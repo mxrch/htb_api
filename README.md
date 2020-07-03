@@ -28,6 +28,20 @@ Hope you'll do great things ! ❤
 ● POST /api/conversations/list/ + api_token\
 ● POST /api/conversations/total/ + api_token
 
+### Admin
+● GET /api/admin/support/topics + api_token\
+● GET /api/admin/support/issues/+id + api_token\
+● POST /api/admin/support/topics + api_token { "name": name }\
+● POST /api/admin/support/subtopics + api_token { "name": name }\
+● GET /api/admin/tags/machines + api_token\
+● GET /api/admin/tags/categories + api_token\
+● POST /api/admin/tags/machines/remove + api_token + data = { "tag": id, "machine": id }\
+● POST /api/admin/tags/machines/add + api_token + data = { "tag": id, "machine": id }\
+● POST /api/admin/tags/categories/new + api_token + data = { "category": name }\
+● POST /api/admin/tags/new + api_token + data = { "category": id, "tag": "name" }\
+● POST /api/admin/tags/categories/delete + api_token + data = { "category": id }\
+● POST /api/admin/tags/delete + api_token + data = { "tag": id }
+
 ### Machines
 ● GET /api/machines/get/all + api_token\
 ● GET /api/machines/get/+id + api_token\
@@ -41,12 +55,25 @@ Hope you'll do great things ! ❤
 ● GET /api/machines/difficulty + api_token\
 ● GET /api/machines/reviews + api_token\
 ● GET /api/machines/todo + api_token\
+● POST /api/machines/todo/update + api_token + data = { ? }\
 ● GET /api/machines/expiry + api_token\
 ● GET /api/machines/spawned + api_token\
 ● GET /api/machines/terminating + api_token\
 ● GET /api/machines/assigned + api_token\
 ● GET /api/machines/resetting + api_token\
-● POST /api/machines/ping/+t + api_token
+● POST /api/machines/ping/+t + api_token\
+● POST /api/machines/tutorial + api_token\
+● GET /api/machines/get/resets/+labname + api_token\
+● POST /api/machines/reset/cancel + api_token + data = { ? }
+
+### Starting Points
+● GET /api/startingpoint/writeup/1 + api_token\
+● GET /api/startingpoint/machines + api_token\
+● GET /api/startingpoint/owns + api_token\
+● GET /api/startingpoint/reset + api_token\
+● GET /api/startingpoint/flag + api_token + data = { ? }\
+● POST /api/startingpoint/step/+? + api_token + data = { ? }\
+● GET /api/startingpoint/writeup/+id + api_token
 
 ### VM actions
 ● POST /api/vm/reset/+id + api_token\
@@ -90,7 +117,8 @@ Hope you'll do great things ! ❤
 ● POST /api/users/htb/fortress/connection/status + api_token\
 ● POST /api/users/htb/endgame/connection/status + api_token\
 ● POST /api/users/htb/private/connection/status/ + api_token\
-● POST /api/users/htb/pro/connection/status/ + api_token
+● POST /api/users/htb/pro/connection/status/ + api_token\
+● POST /api/users/beta/invite + api_token + data = { "code" : code }
 
 ### Endgames
 ● POST /api/endgame/+id+/progress + api_token\
